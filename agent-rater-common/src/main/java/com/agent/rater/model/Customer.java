@@ -10,7 +10,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(uniqueConstraints =
-    @UniqueConstraint(columnNames = {"username"})
+@UniqueConstraint(columnNames = {"username"})
 )
 @Getter
 @Setter
@@ -33,6 +33,6 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "[" + address + "," + eircode + "," + email + "]";
+        return "[" + address + "," + eircode + "," + email + "," + credentials.getUsername() + "]";
     }
 }

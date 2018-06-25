@@ -1,7 +1,7 @@
-package com.agent.rater.mediator.implementations;
+package com.agent.rater.mediator.login.implementations;
 
-import com.agent.rater.mediator.LoginMediator;
-import com.agent.rater.service.LoginService;
+import com.agent.rater.mediator.login.LoginMediator;
+import com.agent.rater.service.login.LoginService;
 import org.springframework.stereotype.Component;
 
 @Component

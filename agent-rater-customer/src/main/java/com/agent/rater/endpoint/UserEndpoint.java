@@ -15,12 +15,6 @@ public class UserEndpoint {
     @Autowired
     private LoginHandler loginHandler;
 
-    public UserEndpoint(){}
-
-    public UserEndpoint(LoginHandler loginHandler) {
-        this.loginHandler = loginHandler;
-    }
-
     @GetMapping("/index")
     public String index() {
         return "index page";

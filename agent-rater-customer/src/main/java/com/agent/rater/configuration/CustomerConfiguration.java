@@ -1,16 +1,23 @@
 package com.agent.rater.configuration;
 
 import com.agent.rater.dao.RaterDao;
+import com.agent.rater.endpoint.RaterEndpoint;
 import com.agent.rater.endpoint.UserEndpoint;
 import com.agent.rater.enums.RoleType;
 import com.agent.rater.handler.login.LoginHandler;
 import com.agent.rater.handler.login.implementations.LoginHandlerImpl;
-import com.agent.rater.mediator.LoginMediator;
-import com.agent.rater.mediator.implementations.LoginMediatorImpl;
+import com.agent.rater.handler.rater.CreateRaterHandler;
+import com.agent.rater.handler.rater.implementations.CreateRaterHandlerImpl;
+import com.agent.rater.mediator.login.LoginMediator;
+import com.agent.rater.mediator.login.implementations.LoginMediatorImpl;
+import com.agent.rater.mediator.rater.CreateRaterMediator;
+import com.agent.rater.mediator.rater.implementations.CreateRaterMediatorImpl;
 import com.agent.rater.model.Rater;
 import com.agent.rater.model.UserCredentials;
-import com.agent.rater.service.LoginService;
-import com.agent.rater.service.implementations.LoginServiceImpl;
+import com.agent.rater.service.login.LoginService;
+import com.agent.rater.service.login.implementations.LoginServiceImpl;
+import com.agent.rater.service.rater.CreateRaterService;
+import com.agent.rater.service.rater.implementations.CreateRaterServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,8 +31,13 @@ public class CustomerConfiguration {
     RaterDao raterDao;
 
     @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+    @Bean
     public UserEndpoint userEndpoint() {
-        return new UserEndpoint(loginHandler());
+        return new UserEndpoint();
     }
 
     @Bean
@@ -36,11 +48,6 @@ public class CustomerConfiguration {
     @Bean
     public LoginMediator loginMediator() {
         return new LoginMediatorImpl(loginService());
-    }
-
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
     }
 
     @Bean
@@ -62,5 +69,29 @@ public class CustomerConfiguration {
 
         }
         return new LoginServiceImpl();
+    }
+
+    @Bean
+    public RaterEndpoint raterEndpoint()
+    {
+        return new RaterEndpoint();
+    }
+
+    @Bean
+    public CreateRaterHandler createRaterHandler()
+    {
+        return new CreateRaterHandlerImpl(createRaterMediator());
+    }
+
+    @Bean
+    public CreateRaterMediator createRaterMediator()
+    {
+        return new CreateRaterMediatorImpl(createRaterService());
+    }
+
+    @Bean
+    public CreateRaterService createRaterService()
+    {
+        return new CreateRaterServiceImpl();
     }
 }

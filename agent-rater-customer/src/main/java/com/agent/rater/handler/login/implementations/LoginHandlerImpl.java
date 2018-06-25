@@ -1,7 +1,8 @@
 package com.agent.rater.handler.login.implementations;
 
 import com.agent.rater.handler.login.LoginHandler;
-import com.agent.rater.mediator.LoginMediator;
+import com.agent.rater.mediator.login.LoginMediator;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
