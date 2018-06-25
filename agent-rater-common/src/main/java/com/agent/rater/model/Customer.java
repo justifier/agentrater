@@ -1,6 +1,9 @@
 package com.agent.rater.model;
 
+import com.agent.rater.enums.UserType;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -11,32 +14,22 @@ import javax.persistence.*;
 )
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Customer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private String role;
-    private String address;
     private String username;
+
+    private String email;
+    private String address;
     private String town;
     private String county;
     private String eircode;
-    private String email;
-    private String password;
+    private UserType userType;
 
-    public Customer() {
-    }
-
-    public Customer(String username, String role, String town, String county, String eircode, String email, String password) {
-        this.username = username;
-        this.role = role;
-        this.town = town;
-        this.county = county;
-        this.eircode = eircode;
-        this.email = email;
-        this.password = password;
-    }
+    @OneToOne(cascade = CascadeType.ALL)
+    private UserCredentials credentials;
 
     @Override
     public String toString() {
