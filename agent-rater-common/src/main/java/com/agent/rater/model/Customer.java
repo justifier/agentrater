@@ -1,6 +1,5 @@
 package com.agent.rater.model;
 
-import com.agent.rater.enums.UserType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,7 +14,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
+ @AllArgsConstructor
 public class Customer {
 
     @Id
@@ -26,7 +25,6 @@ public class Customer {
     private String town;
     private String county;
     private String eircode;
-    private UserType userType;
 
     @OneToOne(cascade = CascadeType.ALL)
     private UserCredentials credentials;

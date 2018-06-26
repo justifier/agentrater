@@ -1,6 +1,6 @@
 package com.agent.rater.model;
 
-import com.agent.rater.enums.UserType;
+import com.agent.rater.enums.RoleType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,8 +16,9 @@ import javax.persistence.Entity;
 public class Agent extends Customer {
 
     public Agent(String agencyName, String managerName, String username, String email, String address, String town,
-                 String county, String eircode, UserCredentials userCredentials) {
-        super(username, email, address, town, county, eircode, UserType.AGENT, userCredentials);
+                 String county, String eircode, UserCredentials credentials) {
+        super(username, email, address, town, county, eircode, credentials);
+        super.getCredentials().setRole(RoleType.AGENT);
         this.agencyName = agencyName;
         this.managerName = managerName;
     }
