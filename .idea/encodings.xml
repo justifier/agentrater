@@ -5,7 +5,7 @@
     <file url="file://$PROJECT_DIR$/agent-rater-application" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agent-rater-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agent-rater-customer" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/agent-rater-notifications" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agent-rater-payments" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agent-rater-reviews" charset="UTF-8" />
   </component>
 </project>

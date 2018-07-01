@@ -36,5 +36,10 @@
             <artifactId>agent-rater-customer</artifactId>
             <version>0.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.agent.rater</groupId>
+            <artifactId>agent-rater-reviews</artifactId>
+            <version>0.0.1</version>
+        </dependency>
     </dependencies>
 </project>

@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication(scanBasePackages={"com.agent.rater"})
-@ComponentScan()//basePackages={"com.agent.rater"}
+@ComponentScan(basePackages={"com.agent.rater"})//basePackages={"com.agent.rater"}
 @EntityScan(basePackages={"com.agent.rater"})
 @EnableJpaRepositories(basePackages={"com.agent.rater"})
 public class App {

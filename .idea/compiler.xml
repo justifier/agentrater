@@ -9,8 +9,8 @@
         <module name="agent-rater-application" />
         <module name="agent-rater-common" />
         <module name="agent-rater-customer" />
-        <module name="agent-rater-notifications" />
         <module name="agent-rater-payments" />
+        <module name="agent-rater-reviews" />
         <module name="agentraterapplication" />
         <module name="agentratercustomer" />
         <module name="agentraternotifications" />

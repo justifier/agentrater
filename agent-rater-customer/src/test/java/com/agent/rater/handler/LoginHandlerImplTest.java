@@ -1,8 +1,8 @@
 package com.agent.rater.handler;
 
-import com.agent.rater.mediator.login.implementations.LoginMediatorImpl;
+import com.agent.rater.customer.handler.login.implementations.LoginHandlerImpl;
+import com.agent.rater.customer.mediator.login.implementations.LoginMediatorImpl;
 import com.agent.rater.testConfiguration.CustomerTestConfiguration;
-import com.agent.rater.handler.login.implementations.LoginHandlerImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

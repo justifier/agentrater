@@ -24,7 +24,7 @@
     <modules>
         <module>agent-rater-customer</module>
         <module>agent-rater-payments</module>
-        <module>agent-rater-notifications</module>
+        <module>agent-rater-reviews</module>
         <module>agent-rater-application</module>
         <module>agent-rater-common</module>
     </modules>
