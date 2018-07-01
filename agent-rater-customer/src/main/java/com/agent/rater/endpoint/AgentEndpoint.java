@@ -1,7 +1,7 @@
 package com.agent.rater.endpoint;
 
 import com.agent.rater.handler.agent.CreateAgentHandler;
-import com.agent.rater.model.Agent;
+import com.agent.rater.model.users.Agent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 package com.agent.rater.mediator.rater.implementations;
 
 import com.agent.rater.mediator.rater.CreateRaterMediator;
-import com.agent.rater.model.Rater;
+import com.agent.rater.model.users.Rater;
 import com.agent.rater.service.rater.CreateRaterService;
 
 public class CreateRaterMediatorImpl implements CreateRaterMediator {

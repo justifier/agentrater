@@ -1,10 +1,8 @@
 package com.agent.rater.service.rater.implementations;
 
 import com.agent.rater.dao.RaterDao;
-import com.agent.rater.model.Rater;
+import com.agent.rater.model.users.Rater;
 import com.agent.rater.service.rater.CreateRaterService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 

@@ -1,4 +1,4 @@
-package com.agent.rater.model;
+package com.agent.rater.model.credentials;
 
 import com.agent.rater.enums.RoleType;
 import lombok.Getter;

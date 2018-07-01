@@ -1,6 +1,6 @@
 package com.agent.rater.dao;
 
-import com.agent.rater.model.Customer;
+import com.agent.rater.model.users.Customer;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.transaction.annotation.Transactional;
 

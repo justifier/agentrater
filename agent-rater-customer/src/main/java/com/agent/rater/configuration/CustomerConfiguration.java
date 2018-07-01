@@ -2,13 +2,12 @@ package com.agent.rater.configuration;
 
 import com.agent.rater.dao.RaterDao;
 import com.agent.rater.endpoint.CustomerEndpoint;
-import com.agent.rater.enums.RoleType;
 import com.agent.rater.handler.login.LoginHandler;
 import com.agent.rater.handler.login.implementations.LoginHandlerImpl;
 import com.agent.rater.mediator.login.LoginMediator;
 import com.agent.rater.mediator.login.implementations.LoginMediatorImpl;
-import com.agent.rater.model.Rater;
-import com.agent.rater.model.UserCredentials;
+import com.agent.rater.model.users.Rater;
+import com.agent.rater.model.credentials.UserCredentials;
 import com.agent.rater.service.login.LoginService;
 import com.agent.rater.service.login.implementations.LoginServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;

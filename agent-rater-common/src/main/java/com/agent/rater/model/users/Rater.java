@@ -1,6 +1,7 @@
-package com.agent.rater.model;
+package com.agent.rater.model.users;
 
 import com.agent.rater.enums.RoleType;
+import com.agent.rater.model.credentials.UserCredentials;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

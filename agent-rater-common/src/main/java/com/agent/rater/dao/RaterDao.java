@@ -1,6 +1,6 @@
 package com.agent.rater.dao;
 
-import com.agent.rater.model.Rater;
+import com.agent.rater.model.users.Rater;
 
 public interface RaterDao extends GenericCustomerDao<Rater> {
 

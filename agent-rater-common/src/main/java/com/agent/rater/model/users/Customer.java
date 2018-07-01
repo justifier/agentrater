@@ -1,11 +1,14 @@
-package com.agent.rater.model;
+package com.agent.rater.model.users;
 
+import com.agent.rater.model.credentials.UserCredentials;
+import com.agent.rater.model.reviews.Review;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(uniqueConstraints =

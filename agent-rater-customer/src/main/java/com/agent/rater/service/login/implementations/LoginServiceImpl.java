@@ -1,7 +1,7 @@
 package com.agent.rater.service.login.implementations;
 
 import com.agent.rater.dao.CustomerDao;
-import com.agent.rater.model.Customer;
+import com.agent.rater.model.users.Customer;
 import com.agent.rater.service.login.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

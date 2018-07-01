@@ -2,9 +2,7 @@ package com.agent.rater.handler.rater.implementations;
 
 import com.agent.rater.handler.rater.CreateRaterHandler;
 import com.agent.rater.mediator.rater.CreateRaterMediator;
-import com.agent.rater.model.Customer;
-import com.agent.rater.model.Rater;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.agent.rater.model.users.Rater;
 import org.springframework.stereotype.Component;
 
 @Component
